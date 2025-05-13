@@ -4,7 +4,7 @@ from sklearn.model_selection import train_test_split
 
 # === Custom Dataset for Sliding Window Lip Sync Sequences ===
 class LipSyncWindowDataset(Dataset):
-    def __init__(self, audio_sequences, expression_sequences, win_size=60, step=10):
+    def __init__(self, audio_sequences, expression_sequences, win_size=30, step=2):
         self.data_pairs = []
 
         # Generate paired audio-expression windows with sliding approach
